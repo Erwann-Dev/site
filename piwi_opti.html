@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  
+<!-- Mirrored from piwielle.github.io/oui/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Jan 2021 21:02:15 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+
+<!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Optimiser son PC. | oui</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Optimiser son PC." />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="optimisations saines" />
+<meta property="og:description" content="optimisations saines" />
+<link rel="canonical" href="index.html" />
+<meta property="og:url" content="index.html" />
+<meta property="og:site_name" content="oui" />
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"Optimiser son PC.","url":"https://piwielle.github.io/oui/","description":"optimisations saines","name":"oui","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="assets/css/stylea8ed.css?v=f96e144f60200dd5644a9f0908036c9e08004ea5">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">oui</h1>
+      <h2 class="project-tagline">optimisations saines</h2>
+      
+        <a href="https://github.com/Piwielle/oui" class="btn">View on GitHub</a>
+      
+      
+    </section>
+
+    <section class="main-content">
+      
+<h1 id="optimiser-son-pc">Optimiser son PC.</h1>
+<p>Il existe énormément de tweaks, optimisations, tutoriels, scripts et logiciels sur internet qui vont vous promettre de doubler vos FPS, réduire votre latence, stabiliser vos FPS, et je ne sais quoi d’autre. La majorité de ces tweaks sont faux, plus à jour, n’améliorent rien, et risquent de vous forcer à réinstaller windows en cas d’erreur (et des fois même si vous avez tout suivi correctement), voire même d’endommager votre PC.
+Les simples tweaks que je vais détailler ici vont garantir un pc qui sera sain, et vous aurez fait 99% du chemin concernant l’optimisation de votre PC, sans danger pour le PC, et avec tout qui fonctionnera.</p>
+
+<p>Si vous souhaitez gratter le 1% restant, faites le, mais sachez que c’est à vos risques et périls, que vous allez forcément à un moment faire une connerie et devoir réinstaller windows, et le tout pour un gain de performances qui sera très très faible (globalement 100% invisible). <br /></p>
+
+<p>Voici ce que je vous conseille sur une nouvelle installation de windows. Ce sont des tweaks qui sont sans dangers pour le pc, que ce soit niveau hardware ou software. Si vous avez une question particulière durant une des étapes, n’hésitez pas à demander sur <em><a href="https://discord.gg/Pw8BC6T"><code class="language-plaintext highlighter-rouge">Discord</code></a></em> !<br /></p>
+
+<h2 id="table-des-matières">Table des matières</h2>
+
+<ul>
+  <li><a href="#installation-de-windows"><strong>Installation de Windows</strong></a></li>
+  <li><a href="#désactivation-des-drivers-automatiques--tweaks-regedit"><strong>Désactivation des drivers automatiques</strong></a></li>
+  <li><a href="#désactivation-des-drivers-automatiques--tweaks-regedit"><strong>Tweaks regedit</strong></a></li>
+  <li><a href="#installation-du-driver-vidéo"><strong>Installation du driver vidéo</strong></a></li>
+  <li><a href="#installation-des-drivers"><strong>Installation des drivers</strong></a></li>
+  <li><a href="#mises-à-jour-de-windows"><strong>Mises à jour de Windows</strong></a></li>
+  <li><a href="#paramètres-de-windows"><strong>Paramètres de Windows</strong></a></li>
+  <li><a href="#w10privacy"><strong>W10Privacy</strong></a></li>
+  <li><a href="#réglages-du-panneau-nvidia"><strong>Réglages du panneau Nvidia</strong></a></li>
+  <li><a href="#msi-afterburner"><strong>MSI Afterburner</strong></a></li>
+  <li><a href="#mode-msi"><strong>Mode MSI</strong></a></li>
+  <li><a href="#islc-intelligent-standby-list-cleaner"><strong>ISLC Intelligent Standby List Cleaner</strong></a></li>
+  <li><a href="#mode-de-gestion-dalimentation"><strong>Mode de gestion d’alimentation</strong></a></li>
+  <li><a href="#réactivation-des-drivers-automatiques"><strong>Réactivation des drivers automatiques</strong></a>
+    <h2 id="installation-de-windows">Installation de Windows</h2>
+  </li>
+</ul>
+
+<p><strong>Note:</strong> Je recommande de réinstaller Windows, afin de repartir sur une base saine. Qui sait ce que vous avez installé sur votre PC, quels tweaks (utiles ou non) vous avez pu installer, quels logiciels inutiles ou virus vous pouvez avoir sur votre PC, etc etc. Réinstaller complètement Windows permettra de repartir complètement d’une base saine, et d’assurer des performances et une compatibilité maximale.</p>
+
+<p>Pour installer Windows, je vous propose la vidéo de Topachat, qui est complète et couvre bien le sujet.</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://www.youtube.com/watch?v=uHOP4UbEGug"><code class="language-plaintext highlighter-rouge">[TUTO] Installer Windows 10 &amp; Tes Drivers - TopAchat [FR]</code></a></p>
+
+<p>La seule chose que j’ajouterai, c’est que je vous suggère de <strong>débrancher le câble Ethernet (ou la carte wifi) pendant l’installation de Windows.</strong> En effet, Windows par défaut installe des drivers pour votre matériel, pendant l’installation de Windows. Je considère ça comme pas idéal, parce que la première chose qu’on va faire après l’install, c’est de mettre à jour nos drivers, alors autant s’épargner l’installation d’anciennes versions de drivers par Windows.
+On pourra rebrancher le câble ethernet uniquement <strong>après avoir désactivé l’installation automatique des drivers</strong>.</p>
+
+<h2 id="désactivation-des-drivers-automatiques--tweaks-regedit">Désactivation des drivers automatiques &amp; Tweaks Regedit</h2>
+
+<p>Une fois que Windows sera installé, on se retrouve sur le bureau (avec une résolution très faible, ce qui est normal, la résolution normale viendra quand on aura installé les drivers de la carte graphique).
+La première chose qu’on va faire, c’est désactiver l’installation automatique des drivers de Windows. Pour ce faire, je vous propose de suivre la vidéo suivante :</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://www.youtube.com/watch?v=IMmNS6yAK4g"><code class="language-plaintext highlighter-rouge">Désactiver l'installation automatique des drivers de Windows Update</code></a></p>
+
+<p>Si vous n’avez pas envie de regarder la vidéo, la commande à rentrer dans CMD (en admin) est la suivante (ceci dit, je vous conseille quand même la vidéo, qui vous donnera plus d’explications, et de contexte)</p>
+
+<p><code class="language-plaintext highlighter-rouge">REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching" /v SearchOrderConfig /t REG_DWORD /d 00000000 /f</code></p>
+
+<p>Une fois les drivers de Windows désactivés, vous devez impérativement <strong>redémarrer le PC</strong>. Une fois que c’est fait, vous pouvez <strong>rebrancher internet</strong></p>
+
+<p>Reboot le PC maintenant vous permettra d’avoir accès à internet, et donc de copier/coller les commandes CMD suivantes (si vous les avez pas sauvegardé avant l’install sur un fichier texte dans une clé USB)</p>
+
+<p>Tant qu’on est à faire des changements dans regedit, je vous propose quelques petits tweaks basiques, qui vont légèrement améliorer les performances de votre PC, mais sans aucun problème de compatibilité, ou risque pour votre PC. La vidéo qui vous donnera des explications et du contexte est la suivante (recommandée).</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://www.youtube.com/watch?v=X4AVdnHFn_E"><code class="language-plaintext highlighter-rouge">Quelques tweaks regedit (basiques)</code></a></p>
+
+<p>Et la liste des tweaks proposés (à rentrer dans CMD en admin, encore une fois)</p>
+
+<p><code class="language-plaintext highlighter-rouge">REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Search" /v AllowCortana /t REG_DWORD /d 00000000 /f</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v HiberbootEnabled /t REG_DWORD /d 00000000 /f</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">REG ADD "HKCU\Keyboard Layout\toggle" /v "Language Hotkey" /t REG_SZ /d 3 /f</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">REG ADD "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" /v DisallowShaking /t REG_DWORD /d 00000001 /f</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">powercfg -h off</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">fsutil behavior set DisableDeleteNotify 0</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Multimedia\SystemProfile" /v SystemResponsiveness /t REG_DWORD /d 00000010 /f</code></p>
+
+<h2 id="installation-du-driver-vidéo">Installation du driver vidéo</h2>
+<p>On va maintenant installer le driver vidéo de votre carte graphique. Pour ça, plusieurs méthodes selon vos besoins :</p>
+
+<p><strong>Carte AMD :</strong>
+Le pilote à télécharger sera disponible sur <code class="language-plaintext highlighter-rouge">https://www.amd.com/fr/support</code>. Il suffit de choisir la bonne CG, de le télécharger, et de l’installer.</p>
+
+<p><strong>Carte NVIDIA :</strong>
+Méthode 1 (à utiliser si vous avez besoin de Shadowplay, ou d’utiliser les hauts parleurs de votre écran, ou de Geforce experience, etc) : Le pilote à télécharger sera disponible sur <code class="language-plaintext highlighter-rouge">https://www.nvidia.fr/Download/Find.aspx?lang=fr</code> (sélectionner la version <strong>STANDARD</strong> -&gt; faire la recherche -&gt; télécharger le driver <strong>Game Ready</strong> le plus récent)</p>
+<ul>
+  <li>Méthode 2 (à utiliser si vous souhaitez une version “lite” des drivers, qui n’a pas geforce experience, shadowplay, etc) : utiliser  <a href="https://www.techpowerup.com/download/techpowerup-nvcleanstall/"><code class="language-plaintext highlighter-rouge">NVCleanInstall</code></a> pour installer votre driver.</li>
+</ul>
+
+<p>Je discute des avantages et des inconvénients de NVCleanInstall dans cette vidéo (que je vous conseille encore une fois de regarder pour du contexte et des informations supplémentaires) :</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://www.youtube.com/watch?v=eydeMfLlIsA&amp;feature=youtu.be&amp;t=694"><code class="language-plaintext highlighter-rouge">Optimisation CG Nvidia @11:34</code></a></p>
+
+<p>Une fois le driver vidéo installé, on aura (enfin) notre résolution normale.</p>
+
+<h2 id="installation-des-drivers">Installation des drivers</h2>
+<p>L’étape suivante consiste à installer les autres pilotes de votre système. La vidéo explicative est la suivante :</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://www.youtube.com/watch?v=TzSJ_DTLfqY"><code class="language-plaintext highlighter-rouge">Installer ses drivers de la bonne façon</code></a></p>
+
+<p>Le résumé, c’est qu’utiliser des outils comme driverscloud, driverbooster, touslesdrivers, etc, c’est pas la meilleure façon d’installer vos drivers, et ça peut créer des soucis. Le site de la carte mère, et le site de la carte graphique sont les meilleurs endroits. Pour plus de détails, je vous renvoie à la vidéo.</p>
+
+<h2 id="mises-à-jour-de-windows">Mises à jour de Windows</h2>
+<p>Une fois tous nos drivers à jour, et avant d’entamer la suite des réglages de Windows, on va vérifier les éventuelles mises à jour. On le fait maintenant, parce que certaines grosses mises à jour peuvent réinitialiser certains paramètres de windows, ça nous évitera de faire les réglages 2 fois.
+Il suffit d’aller dans les options de windows, cliquer sur windows update, et faire une recherche de mises à jour. Une fois qu’elles ont été téléchargées et installées, redémarrer le PC.
+<strong>Une fois le PC redémarré, refaites une vérification de mise à jour</strong>. Des fois, le fait d’avoir fait une màj va débloquer l’installation d’autres màj, d’ou le fait de devoir faire la vérification deux fois de suite. Si il y a de nouvelles mises à jour, répéter l’opération, jusqu’à avoir windows à jour.</p>
+
+<h2 id="paramètres-de-windows">Paramètres de Windows</h2>
+
+<p>Cette étape consiste simplement à se promener dans tous les paramètres de Windows, et lire et décocher ce qui ne vous semble pas utile. Pour vous aider, je peux vous proposer la vidéo suivante, qui va vous expliquer la majorité des paramètres que vous trouverez :</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://www.youtube.com/watch?v=DP0e0xTk0Ck"><code class="language-plaintext highlighter-rouge">Paramètres Windows</code></a></p>
+
+<h2 id="w10privacy">W10Privacy</h2>
+
+<p>W10privacy est le logiciel que j’utilise pour régler certains paramètres pas directement accessibles dans les réglages de windows. J’ai choisi celui ci pour la clarté des explications qu’il propose, et la possibilité de simplement revenir en arrière sur un changement.
+Vidéo explicative ici (conseillée) :</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://www.youtube.com/watch?v=oPUJThkVmXI"><code class="language-plaintext highlighter-rouge">W10Privacy (et autres logiciels de "vie privée")</code></a></p>
+
+<h2 id="réglages-du-panneau-nvidia">Réglages du panneau Nvidia</h2>
+
+<p>Ensuite, je vous propose de faire un tour du panneau Nvidia, et d’activer et de désactiver certaines choses. Si vous avez une carte AMD, je peux pas vous aider, et je crois pas connaître de bon tuto pour. Profitez-en pour faire des expériences.</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://youtu.be/Z9pkHJGm004"><code class="language-plaintext highlighter-rouge">Paramètres du panneau Nvidia</code></a></p>
+
+<h2 id="msi-afterburner">MSI Afterburner</h2>
+<p>Msi Afterburner est un logiciel très léger et puissant, qui va vous permettre de :</p>
+<ul>
+  <li>gérer la vitesse des ventilos de votre CG, pour améliorer ses performances et/ou réduire son bruit</li>
+  <li>regarder en temps réel l’utilisation de votre CG, sa température, ainsi que l’utilisation et températures de votre processeur, et du reste du PC.</li>
+  <li>overclock votre CG (sujet que je traiterai pas, car trop long et source de potentielle instabilité)</li>
+</ul>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://youtu.be/eydeMfLlIsA?t=1"><code class="language-plaintext highlighter-rouge">Utiliser MSI Afterburner</code></a></p>
+
+<h2 id="mode-msi">Mode MSI</h2>
+<p>L’explication et l’utilité du mode MSI se trouvent dans la vidéo suivante :</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://youtu.be/eydeMfLlIsA?t=502"><code class="language-plaintext highlighter-rouge">MSI Mode</code></a></p>
+
+<p>Je vous rajoute ici le lien vers msi_util v3 : <a href="http://www.mediafire.com/file/ewpy1p0rr132thk/MSI_util_v3.zip/file">http://www.mediafire.com/file/ewpy1p0rr132thk/MSI_util_v3.zip/file</a></p>
+
+<p>Si vous souhaitez des informations complémentaires sur le mode MSI (pour la culture générale), cette explication est très bien : <a href="https://forum.malekal.com/viewtopic.php?t=62058">https://forum.malekal.com/viewtopic.php?t=62058</a></p>
+
+<h2 id="islc-intelligent-standby-list-cleaner">ISLC Intelligent Standby List Cleaner</h2>
+<p>Comme MSI Afterburner, j’utilise ISLC sur tous mes ordinateurs, pour sa légèreté, et les deux fonctionnalités utiles qu’il propose :</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://youtu.be/QV8IojCtoOQ"><code class="language-plaintext highlighter-rouge">ISLC</code></a></p>
+
+<h2 id="mode-de-gestion-dalimentation">Mode de gestion d’alimentation</h2>
+<p>Pour finir, un des réglages les plus importants que vous pouvez faire à votre système, c’est de changer son mode d’alimentation pour le passer en “hautes performances”. Une vidéo explicative si vous en avez besoin est disponible ici :</p>
+
+<p><img src="https://placehold.it/15/f03c15/000000?text=+" alt="#f03c15" /> <a href="https://youtu.be/SAlqNxr1eVY"><code class="language-plaintext highlighter-rouge">Mode de gestion d'alimentation</code></a></p>
+
+<h2 id="réactivation-des-drivers-automatiques">Réactivation des drivers automatiques</h2>
+<p>L’étape finale consiste à réactiver les drivers automatique installés par Windows. C’est pénible et inutile quand on installe windows, parce qu’on va de toute façon installer nos propres drivers juste après, mais une fois que tout est fait, je vous conseille de les réactiver.</p>
+
+<p>Ils sont très utiles pour laisser Windows détecter et installer automatiquement des drivers lorsque vous branchez quelque chose de nouveau au PC (comme une imprimante, une manette, un disque dur externe, etc).</p>
+
+<p>Dans certains cas (l’ancien adaptateur sans fil de la manette xbox par exemple), sans les drivers automatiques de windows, vous allez passer des heures à chercher le bon fichier .cab pour l’installer, alors que ça sera fera automatiquement en 2 secondes avec. Pour les réactiver, entrez simplement dans CMD en admin la commande suivante :</p>
+
+<p><code class="language-plaintext highlighter-rouge">REG ADD "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\DriverSearching" /v SearchOrderConfig /t REG_DWORD /d 00000001 /f</code></p>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/Piwielle/oui">oui</a> is maintained by <a href="https://github.com/Piwielle">Piwielle</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com/">GitHub Pages</a>.</span>
+      </footer>
+    </section>
+
+    
+  </body>
+
+<!-- Mirrored from piwielle.github.io/oui/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 13 Jan 2021 21:02:15 GMT -->
+</html>
