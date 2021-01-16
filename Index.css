@@ -79,6 +79,32 @@ a:active {
   border-radius: 100px;
   width: 110px;
   height: 50px;
-  background-color: rgba(0, 140, 255, 0.575);
+  background-color: rgba(0, 140, 255, 0.089);
   border-color: rgba(0, 0, 0, 0);
+}
+
+#but_contact a:link {
+  color: rgba(214, 193, 5, 0.50);
+  text-decoration: none;
+  cursor: default;
+}
+
+#but_contact a:visited {
+  color: rgb(214, 89, 5, 0.50);
+  cursor: default;
+}
+
+#but_contact a:focus {
+  color: rgb(214, 193, 5, 0.50);
+  cursor: default;
+}
+
+#but_contact a:hover {
+  color: rgb(255, 0, 0, 0.50);
+  cursor: default;
+}
+
+#but_contact a:active {
+  color: rgba(214, 193, 5, 0.50);
+  cursor: default;
 }
