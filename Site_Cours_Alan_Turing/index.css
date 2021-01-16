@@ -1,0 +1,153 @@
+/* Mon CSS perso */
+
+body {
+   width: 1000px;
+   margin: 0px auto;
+   /* marge extérieure 0 en vertical et auto en horizontal : donc centré horizontalement */
+   background-color: #181a1b;
+   border: solid 1px transparent;
+}
+
+h1 {
+   width: 1000px;
+   margin: 10px auto;
+   padding: 10px;
+   font-family: fantasy;
+   color: #e8e6e3;
+   font-size: 2em;
+   text-align: center;
+   background-color: #181a1b;
+   border: solid 1px #000000;
+}
+
+h2 {
+   width: 1000px;
+   margin: 10px auto;
+   padding: 10px;
+   font-family: cursive;
+   color: #FFFFFF;
+   font-size: 1.5em;
+   text-align: left;
+   background-color: #000000;
+   border: solid 1px #303436;
+}
+
+h3 {
+   width: 1000px;
+   margin: 10px auto;
+   padding: 10px;
+   font-weight: bold;
+   color: #FFFFFF;
+   font-size: 1.5em;
+   text-align: right;
+   background-color: #000000;
+   border: solid 1px #303436;
+}
+
+h4{
+   text-decoration: underline;
+   font-weight: bold;
+}
+
+#vid_title{
+   font-size: 25px;
+}
+
+#list1{
+   float:left;
+   background-color: aqua;
+   font-size: 17px;
+   width: 499px;
+   height: 180px;
+}
+
+#list2{
+   float:right;
+   background-color: cornflowerblue;
+   font-size: 17px;
+   width: 499px;
+   height: 180px;
+}
+
+#text_bio{
+   text-align: left;
+}
+
+#bio{
+   position: relative;
+}
+
+#img_portrait{
+   margin: 5px 5px 0 15px;
+   float: right;
+   width: 168px;
+   height: 229px;
+}
+
+#text_portrait{
+   float: right;
+   padding-right: 9%;
+}
+
+.entete {
+   /* A completer */
+   border: solid 1px #000000;
+   background-color: #db3737;
+   font-size: 20px;
+}
+
+.entetegauche {
+   /* A completer */
+   border: solid 1px #000000;
+   background-color: #FFFFFF;
+}
+
+.entetecentre {
+   /* A completer */
+   border: solid 1px #000000;
+   background-color: #FFFFFF;
+}
+
+.entetedroite {
+   /* A completer */
+   border: solid 1px #000000;
+   background-color: #FFFFFF;
+}
+
+.corps {
+   /* A completer */
+   border: solid 1px #000000;
+   background-color: #41c541;
+}
+
+.corpsgauche {
+   /* A completer */
+   border: solid 1px #000000;
+   background-color: #FFFFFF;
+}
+
+.corpsdroite {
+   /* A completer */
+   border: solid 1px #000000;
+   background-color: #FFFFFF;
+}
+
+/* NE PAS MODIFIER CE QUI SUIT */
+
+.espace {
+   clear: both;
+}
+
+img {
+   width: 100%;
+}
+
+ol, ul {
+   padding-left: 20px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   font-weight: 900;
+}
