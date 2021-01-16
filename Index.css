@@ -1,0 +1,67 @@
+h1 {
+  color: aliceblue;
+  text-align: center;
+}
+
+body {
+  background-image: url(img_dev_background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a:link {
+  color: rgb(214, 193, 5);
+  text-decoration: none;
+  cursor: default;
+}
+
+a:visited {
+  color: rgb(214, 89, 5);
+  cursor: default;
+}
+
+a:focus {
+  color: rgb(214, 193, 5);
+  cursor: default;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+  cursor: default;
+}
+
+a:active {
+  color: rgb(214, 193, 5);
+  cursor: default;
+}
+
+#but_left {
+  margin-top: 1%;
+  margin-left: 1%;
+  border-radius: 100px;
+  padding: 1%;
+  background-color: rgba(0, 140, 255, 0.575);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+#but_mid {
+  margin-top: 1%;
+  margin-left: 1%;
+  border-radius: 100px;
+  padding: 1%;
+  background-color: rgba(0, 140, 255, 0.575);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+#but_right {
+  margin-top: 1%;
+  margin-left: 1%;
+  border-radius: 100px;
+  padding: 1%;
+  background-color: rgba(0, 140, 255, 0.575);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+#div_1 {
+  text-align: center;
+}
