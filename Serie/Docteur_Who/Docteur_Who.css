@@ -1,0 +1,162 @@
+#go_back {
+    border-radius: 8px;
+    padding: 1%;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.219);
+    display: block;
+    margin: auto;
+    margin-top: 50vh;
+    /* poussé de la moitié de hauteur de viewport */
+    transform: translateY(-50%);
+    /* tiré de la moitié de sa propre hauteur */
+}
+
+#menu-doctor-who,
+#menu-doctor-who ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+#menu-doctor-who li {
+    display: inline-block;
+    position: relative;
+    border-radius: 8px 8px 0 0;
+}
+
+#menu-doctor-who ul li {
+    display: inherit;
+    border-radius: 0;
+}
+
+#menu-doctor-who ul li:hover {
+    border-radius: 0;
+}
+
+#menu-doctor-who ul li:last-child {
+    border-radius: 0 0 8px 8px;
+}
+
+#menu-doctor-who ul {
+    position: absolute;
+    z-index: 1000;
+    max-height: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    -moz-transition: .8s all .3s;
+    -webkit-transition: .8s all .3s;
+    transition: .8s all .3s;
+}
+
+#menu-doctor-who li:hover ul {
+    max-height: 15em;
+}
+
+/* background des liens menus */
+#menu-doctor-who li:first-child {
+    background-color: #65537A;
+    background-image: -webkit-linear-gradient(top, #65537A 0%, #2A2333 100%);
+    background-image: linear-gradient(to bottom, #65537A 0%, #2A2333 100%);
+}
+
+#menu-doctor-who li:last-child {
+    background-color: #CFFF6A;
+    background-image: -webkit-linear-gradient(top, #CFFF6A 0%, #677F35 100%);
+    background-image: linear-gradient(to bottom, #CFFF6A 0%, #677F35 100%);
+}
+
+/* background des liens sous menus */
+#menu-doctor-who li:first-child li {
+    background: #2A2333;
+}
+
+#menu-doctor-who li:last-child li {
+    background: #677F35;
+}
+
+/* background des liens menus et sous menus au survol */
+#menu-doctor-who li:first-child:hover,
+#menu-doctor-who li:first-child li:hover {
+    background: #65537A;
+}
+
+#menu-doctor-who li:last-child:hover,
+#menu-doctor-who li:last-child li:hover {
+    background: #CFFF6A;
+}
+
+/* les a href */
+#menu-doctor-who a {
+    text-decoration: none;
+    display: block;
+    padding: 8px 32px;
+    color: #fff;
+    font-family: arial;
+}
+
+#menu-doctor-who ul a {
+    padding: 8px 0;
+}
+
+#menu-doctor-who li:hover li a {
+    color: #fff;
+    text-transform: inherit;
+}
+
+#menu-doctor-who li:hover a,
+#menu-doctor-who li li:hover a {
+    color: #000;
+}
+
+nav {
+    width: 100%;
+    margin: 0px auto 40px auto;
+    position: sticky;
+    top: 0px;
+}
+
+/**/
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+a:link {
+    color: rgb(214, 193, 5);
+    text-decoration: none;
+    cursor: default;
+}
+
+a:visited {
+    color: rgb(214, 193, 5);
+    cursor: default;
+}
+
+a:focus {
+    color: rgb(214, 193, 5);
+    cursor: default;
+}
+
+a:hover {
+    color: rgb(214, 193, 5);
+    cursor: default;
+}
+
+a:active {
+    color: rgb(214, 193, 5);
+    cursor: default;
+}
+
+img {
+    border-radius: 6%;
+    margin-top: 30%;
+}
+
+body {
+    background-image: url('main_doctor_who_background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
