@@ -3,6 +3,10 @@ h1 {
   text-align: center;
 }
 
+h1:hover {
+  color:yellow;
+}
+
 body {
   background-image: url(code-938776.png);
   background-repeat: no-repeat;
